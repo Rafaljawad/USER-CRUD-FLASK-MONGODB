@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>UPDATE USER : </h1>
+    <form action="/update/{{data['_id']}}" method="post">
+        <input type="hidden" value="{{data['_id']}}" name="_id">
+        <label for="fname">first name</label>
+        <input type="text" name="fname" id="fname" value="{{data['fname']}}">
+        <label for="lname">last name</label>
+        <input type="text" name="lname" id="lname" value="{{data['lastName']}}">
+        <label for="age">age</label>
+        <input type="text" name="age" id="age"  value="{{data['age']}}">
+        <label for="email">email</label>
+        <input type="text" name="email" id="email" value="{{data['email']}}">
+        <button type="submit">Update User</button>
+    </form>
+    <a href="/read/data">User Dashboard</a>
+</body>
+</html>

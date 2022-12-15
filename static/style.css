@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: aqua; */
+}
+.container{
+    background-color: antiquewhite;
+    width:80%;
+    height:100vh;
+    margin:10px auto;
+}
+.user{
+    width:200px;
+    border: 1px solid black;
+
+}
