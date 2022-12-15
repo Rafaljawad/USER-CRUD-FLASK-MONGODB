@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 app=Flask(__name__)
 try:
     mongo=pymongo.MongoClient("mongodb://localhost:27017/")
-    db=mongo.UserInfo#company is the name of database
+    db=mongo.UserInfo#userInfo is the name of database will be created if not found
     mongo.server_info()#triger exception if can not connect to db
 except:
     print("ERROR CAN NOT CONNECT TO DB")
